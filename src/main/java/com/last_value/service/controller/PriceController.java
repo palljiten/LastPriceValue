@@ -1,5 +1,6 @@
 package com.last_value.service.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.last_value.service.model.PriceRecord;
 import com.last_value.service.service.LastValueService;
@@ -12,6 +13,7 @@ import java.util.UUID;
 public class PriceController {
 
     private final LastValueService lastValueService;
+    
     public PriceController(LastValueService lastValueService) {
         this.lastValueService = lastValueService;
     }

@@ -6,6 +6,9 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class InMemoryLastValueService implements LastValueService {
 
     private final Map<String, PriceRecord> committed = new ConcurrentHashMap<>();
