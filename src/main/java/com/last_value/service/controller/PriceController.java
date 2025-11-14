@@ -1,6 +1,5 @@
 package com.last_value.service.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.last_value.service.model.PriceRecord;
 import com.last_value.service.service.LastValueService;
